@@ -1,0 +1,25 @@
+<head>
+	<style>
+		#button {
+	
+		}
+	</style>
+</head>
+<body>
+	<a id="button">click me</a>
+	<script>
+		var button = document.getElementById("button");
+		button.addEventListener("click", function() {
+			
+			var header = document.getElementById("header");
+			header.style.display = 'block';
+			
+			var element = document.getElementById("flower");
+			element.style.display = 'block';
+			
+			button.style.display = 'none';
+		})
+	</script>
+	<div id="header" style="margin-left: 100px; font-size: 100px; display:none">Diana is a nice girl</div>
+	<img id="flower" style="margin-left: 100px; display:none" src="http://www.mydearvalentine.com/images/miles-of-smiles/5.jpg">
+</body>
