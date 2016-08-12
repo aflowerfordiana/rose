@@ -1,12 +1,53 @@
 <head>
+	<link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
 	<style>
-		#button {
-	
+		body {
+			font-family: 'La Belle Aurore', cursive;
+		}
+		
+		button {
+			position: fixed;
+			color: #fff;
+			background-color: #EF597B;
+			text-shadow: -1px 1px #417cb8;
+			border: none;
+			width: 200px;
+			height: 60px;
+			font-size: 40px;
+			line-height: 66px;
+			font-family: 'La Belle Aurore', cursive;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		button:hover,
+		button.hover {
+		line-height: 75px;
+					height: 70px;
+			font-size: 45px;
+		  background-color: #ee3a63;
+		  text-shadow: -1px 1px #27496d;
+		}
+
+		button:active,
+		button.active {
+		outline: none;
+		line-height: 75px;
+					height: 70px;
+		font-size: 45px;
+		  background-color: #ee3a63;
+		  text-shadow: -1px 1px #193047;
+		}
+		
+		.wrapper {
+			width: 1100px;
+			margin: 50px auto 0;
 		}
 	</style>
 </head>
 <body>
-	<a id="button">click me</a>
+	<button id="button">click me</button>
 	<script>
 		var button = document.getElementById("button");
 		button.addEventListener("click", function() {
@@ -20,6 +61,8 @@
 			button.style.display = 'none';
 		})
 	</script>
-	<div id="header" style="margin-left: 100px; font-size: 100px; display:none">Diana is a nice girl</div>
-	<img id="flower" style="margin-left: 100px; display:none" src="http://www.mydearvalentine.com/images/miles-of-smiles/5.jpg">
+	<div class="wrapper">
+		<div id="header" style="font-size: 100px; display:none">Diana is a beautiful girl</div>
+		<img id="flower" style="margin-left: 100px; display:none" src="http://www.mydearvalentine.com/images/miles-of-smiles/5.jpg">
+	</div>
 </body>
